@@ -24,7 +24,7 @@ class customer(models.Model):
     email = models.CharField(max_length=100)
     phone = models.IntegerField()
     ship_address = models.TextField()
-
+    password = models.CharField(max_length=100)
     def __str__(self):
         return self.name
 
